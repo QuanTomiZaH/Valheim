@@ -1,0 +1,5 @@
+5 5 * * * docker kill valheim-server-test
+20 5 * * * cp /root/valheim/worlds/MaximusPrime.db /root/backups/MaximusPrime-$(date +"\%Y-\%m-\%d-\%T").db
+21 5 * * * cp /root/valheim/worlds/MaximusPrime.fwl /root/backups/MaximusPrime-$(date +"\%Y-\%m-\%d-\%T").fwl
+25 5 * * * find /root/backups/MaximusPrime*.* -maxdepth 1 -type f -mtime 7 -delete
+30 5 * * * docker start valheim-server-test
