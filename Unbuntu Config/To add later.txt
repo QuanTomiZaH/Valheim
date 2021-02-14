@@ -1,0 +1,10 @@
+Make my own container image(based on the remote one)
+Add automatic docker pull(daily)(update container image)
+Then stop the (running)container(docker stop)
+then remove the current container (docker rm)
+
+Create a script for running the docker container with correct env variables
+
+
+Follow the following commands:
+https://phoenixnap.com/kb/update-docker-image-container
