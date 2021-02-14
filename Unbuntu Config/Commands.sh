@@ -33,6 +33,10 @@ quit
 
 #edit the start server shell file
 vi /etc/valheim/start_server.sh
+#add to the command "> /dev/null &"
+
+#save location:
+/root/.config/unity3d/IronGate/Valheim/worlds
 
 #Run the server
 ./etc/valheim/start_server.sh
