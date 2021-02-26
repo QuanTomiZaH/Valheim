@@ -12,6 +12,12 @@ Crontab:
 
 Backup location:
 /home/steam/backups
+mkdir /home/steam/backups
+
 
 Worlds location:
 /home/steam/.config/unity3d/IronGate/Valheim/worlds
+
+Firewall:
+sudo ufw allow 2456:2458/udp
+sudo ufw allow 2456:2458/tcp
